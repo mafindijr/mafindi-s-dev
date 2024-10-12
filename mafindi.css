@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+  .container {
+    
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    
+  }
+
+  .header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+    height: auto;
+    position: fixed;
+    top: 0;
+    border-bottom: coral 3px solid;
+  }
+
+  .header a {
+    float: right;
+    color: darksalmon;
+    text-decoration: solid overline;
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    
+  }
+
+  #active {
+     font-weight: bold;
+     color: cadetblue;
+  }
+
+  .header h1 {
+    font-size: medium;
+    padding: 10px;
+    color: darkcyan;
+    text-decoration: underline;
+    float: left;
+  }
+  .content {
+    /*width: 50%;*/
+    clear: both;
+    width: 100%;
+    height: 500px;
+    background-color: #88adbbc9;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .topic {
+
+    float: left;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .topic #homeH, #homeH {
+
+    color: #08383b;
+
+  }
+
+  .topic h3#homeH {
+    color: coral;
+  }
+
+  .abdul {
+          float: right;
+          border-radius: 8px 8px 0px 0px;
+          height: 300px;
+          width: 100%;
+          margin: 10px;
+  }
+  .image {
+    float: right;
+    text-align: center;
+  }
+
+  .card-container {
+        display: flex;
+        gap: 50px;
+        margin: 50px;
+        justify-content: center;
+    }
+    .card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+    }
+    .card img {
+        max-width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+    .card h2 {
+        margin: 15px 0;
+        font-size: 1.5em;
+    }
+    .card p {
+        font-size: 1em;
+        color: #666;
+    }
+
+
+  .footer {
+    clear: both;
+    background-color: #88adbbc9;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    display: flex;
+    text-align: center;
+    height: 50px;
+  }
+
+  .footp {
+    display: none;
+  }
+
+  .footer p {
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .footer a {
+    color: coral;
+    text-decoration: none;
+    display: flex;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  a:hover {
+    background-color: rgba(16, 59, 66, 0.966);
+    color: white;
+  }
+
+
+   /*#services {
+    display: grid;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+    gap: 30px;
+   }*/
+
+
+  @media screen and (max-width: 760px) {
+
+    .header, .header a,
+    #newsletter form, .header h1,
+    #cards .card, article.main-col,
+    aside.side-bar {
+
+      float: none;
+      text-align: center;
+      width: 100%;
+      overflow: hidden;
+      table-layout: auto;
+    }
+
+    
+    .container {
+      display: block;
+      overflow: hidden;
+
+    }
+
+    .content {
+      margin-top: 4%;
+      overflow: hidden;
+      display: block;
+    }
+    .card-container {
+      display: block;
+      gap: 30px;
+      justify-content: center;
+     
+    }
+    .abdul {
+      margin-right: auto;
+      margin-left: auto;
+      width: 250px;
+    }
+    .card {
+      margin: 10px;
+      width: 100%;
+    }
+    .topic {
+      width: 100%;
+      text-align: center ;
+      overflow: hidden;
+    }
+
+    .image {
+      clear: both;
+      margin-right: auto;
+      margin-left: auto;
+      margin-right: 30px;
+      justify-content: center;
+      text-align: center;
+      
+    }
+    .abdul {
+      align-self: center;
+      width: 100%;
+    }
+
+    .content {
+      display: block;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      
+    }
+
+    .sub-container {
+      justify-content: center;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .footer a {
+      display: none;
+    }
+
+    #newsletter button, .quote button {
+
+      display: block;
+      width: 100%;
+    }
+    
+    .main-col h1 {
+      text-align: center;
+      width: 100%;
+    }
+
+    #newsletter form input[type="email"], .quote input, .quote textarea {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+      .footp {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        color: #fff;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+
+      #services li {
+
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+
+      }
+     
+
+    .container-sign {
+      
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      box-shadow: none;
+    
+    }
+
+
+    .contact {
+      display: block;
+      justify-content: center;
+      text-align: center;
+    }
+
+
+    
+  }
+
+  @media screen and (max-width: 400px) {
+
+    body {
+      font-family: sans-serif;
+      font-size: 16px;
+      display: block;
+    }
+
+    .header, .header a,
+    #newsletter form, .header h1,
+    #cards .card, article.main-col,
+    aside.side-bar {
+
+         display: block;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+
+    }
+
+
+    
+  }
+
+   
+  .image {
+    float: right;
+  }
+  .topic {
+    float: left;
+  }
+
+  #display-image {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    padding: 50px;
+    border: 3px solid white;
+    margin: 10px;
+  }
+ 
+  
+.contact {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin: 10px;
+  padding: 50px;
+  background-color: #0f6381c9
+  
+}
+
+.contact h1 {
+
+  margin: 10px;
+  text-decoration: underline;
+  color: rgb(175, 201, 201);
+}
+
+.contact p {
+
+  font-size: 25px;
+  margin: 10px;
+  color: white;
+}
+
+.contact a {
+  font-style: italic;
+  text-decoration: none;
+  color: #000;
+}
+
+.subscribe {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 15px;
+  width: 50%;
+  border: none;
+
+}
+
+.sub-button {
+
+  padding: 12px 30px;
+  margin: 10px;
+  font-size: 15px;
+  width: 200px;
+  font-weight: bold;
+  background-color: #537b8d;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.sub-container {
+
+  background: coral;
+  padding: 20px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  margin: 10px;
+  padding: 10px;
+}
+
+btn-1 {
+  height: 38px;
+  background: #000;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.dark {
+  padding: 15px;
+  background: #08383b;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: right;
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  padding: 20px;
+  margin-right: 40px;
+  
+
+}
+
+.dark input {
+  justify-content: center;
+  margin: 10px;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.dark .btn-1 {
+  width: 300px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: coral;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.8s;
+
+}
+
+
+.btn-1:hover {
+  background-color: #537b8d;
+  color: #ffffff;
+}
+
+
+aside .side-bar {
+
+  float:  right;
+  width: 400px;
+  margin-top: 10px;
+
+}
+
+aside.side-bar .quote input, aside.side-bar .quote textarea {
+  width: 300px;
+  padding: 5px;
+}
+
+article.main-col {
+  width: 650px;
+  height: auto;
+  float: left;
+}
+
+ul#services li {
+  clear: both;
+  text-align: center;
+  list-style: none;
+  padding: 20px;
+  margin-top: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+  
+
+}
+
+article h1 {
+  text-align: center;
+}
