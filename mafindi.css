@@ -310,6 +310,144 @@
     
   }
 
+
+  @media screen and (max-width: 576px) {
+
+     .header, .header a,
+    #newsletter form, .header h1,
+    #cards .card, article.main-col,
+    aside.side-bar {
+
+      float: none;
+      text-align: center;
+      width: 100%;
+      overflow: hidden;
+      table-layout: auto;
+    }
+
+    
+    .container {
+      display: block;
+      overflow: hidden;
+
+    }
+
+    .content {
+      margin-top: 4%;
+      overflow: hidden;
+      display: block;
+    }
+    .card-container {
+      display: block;
+      gap: 30px;
+      justify-content: center;
+     
+    }
+    .abdul {
+      margin-right: auto;
+      margin-left: auto;
+      width: 250px;
+    }
+    .card {
+      margin: 10px;
+      width: 100%;
+    }
+    .topic {
+      width: 100%;
+      text-align: center ;
+      overflow: hidden;
+    }
+
+    .image {
+      clear: both;
+      margin-right: auto;
+      margin-left: auto;
+      margin-right: 30px;
+      justify-content: center;
+      text-align: center;
+      
+    }
+    .abdul {
+      align-self: center;
+      width: 100%;
+    }
+
+    .content {
+      display: block;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      
+    }
+
+    .sub-container {
+      justify-content: center;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .footer a {
+      display: none;
+    }
+
+    #newsletter button, .quote button {
+
+      display: block;
+      width: 100%;
+    }
+    
+    .main-col h1 {
+      text-align: center;
+      width: 100%;
+    }
+
+    #newsletter form input[type="email"], .quote input, .quote textarea {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+      .footp {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        color: #fff;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+
+      #services li {
+
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+
+      }
+     
+
+    .container-sign {
+      
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      box-shadow: none;
+    
+    }
+
+
+    .contact {
+      display: block;
+      justify-content: center;
+      text-align: center;
+    }
+
+
+}
+
+
   @media screen and (max-width: 400px) {
 
     body {
