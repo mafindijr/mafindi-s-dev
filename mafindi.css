@@ -98,7 +98,8 @@
   }
 
   .card-container {
-        display: flex;
+        display: grid;
+        grid-columns-template: 300px 300px 300px;
         gap: 50px;
         margin: 50px;
         justify-content: center;
@@ -184,7 +185,7 @@
     }
 
     .container {
-        flex-direction: column;
+        display: block;
         padding: 10px;
     }
 
