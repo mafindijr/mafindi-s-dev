@@ -14,6 +14,7 @@
     
     background-color: whitesmoke;
     width: 100%;
+    max-width: 1200px;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -175,6 +176,18 @@
 
   @media screen and (max-width: 760px) {
 
+      @media (max-width: 768px) {
+    /* Styles for small screens */
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
     .header, .header a,
     #newsletter form, .header h1,
     #cards .card, article.main-col,
@@ -188,11 +201,11 @@
     }
 
     
-    .container {
+    /*.container {
       display: block;
       overflow: hidden;
 
-    }
+    }*/
 
     .content {
       margin-top: 4%;
